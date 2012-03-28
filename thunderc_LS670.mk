@@ -1,4 +1,5 @@
 # We're on Sprint
+CDMA_BRAND := sprint
 CDMA_GOOGLE_BASE := android-sprint-us
 CDMA_CARRIER_ALPHA := Sprint
 CDMA_CARRIER_NUMERIC := 310120
@@ -11,4 +12,5 @@ $(call inherit-product, device/lge/thunderc_common/thunderc_common.mk)
 # Add in model specific kernel modules
 PRODUCT_COPY_FILES += \
     device/lge/thunderc_LS670/files/kernel/wireless.ko:system/lib/modules/wireless.ko \
-    device/lge/thunderc_LS670/files/kernel/tun.ko:system/lib/modules/tun.ko
+    device/lge/thunderc_LS670/files/kernel/tun.ko:system/lib/modules/tun.ko \
+    device/lge/thunderc_LS670/files/kernel/cifs.ko:system/lib/modules/cifs.ko
